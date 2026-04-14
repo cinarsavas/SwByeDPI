@@ -1,0 +1,9 @@
+Package: org.github.byedpi.app
+Name: ByeByeDPI
+Version: 0.9.3
+Architecture: iphoneos-arm
+Description: ByeDPI iOS app
+Maintainer: mIwr
+Author: mIwr
+Section: Utilities
+Depends: mobilesubstrate, firmware (>= 14.0)

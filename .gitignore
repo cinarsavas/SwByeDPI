@@ -1,3 +1,7 @@
+##Theos
+.theos/
+./**/.theos/
+packages/
 
 .DS_Store
 Packages

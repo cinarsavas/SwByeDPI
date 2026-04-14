@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8B09F8692F7A672E0065FB4D /* ByeByeDPITun.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BB4205C2F73FEE6005C2F2B /* ByeByeDPITun.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8B2BF7B92F4DFB9D0016A26B /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B2BF7B82F4DFB9D0016A26B /* RswiftLibrary */; };
 		8B3AF57C2F6DCEDE0085E8BC /* SwByeDPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD891882F3A1A750020D925 /* SwByeDPI.framework */; };
 		8B3AF57D2F6DCEDE0085E8BC /* SwByeDPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD891882F3A1A750020D925 /* SwByeDPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8B3AF5822F6DCEE80085E8BC /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3AF5812F6DCEE80085E8BC /* RswiftLibrary */; };
 		8B3AF5842F6DCEEF0085E8BC /* TextFieldAlert in Frameworks */ = {isa = PBXBuildFile; platformFilters = (ios, maccatalyst, tvos, ); productRef = 8B3AF5832F6DCEEF0085E8BC /* TextFieldAlert */; };
 		8B3B63EB2F597F94005BA55B /* TextFieldAlert in Frameworks */ = {isa = PBXBuildFile; platformFilters = (ios, maccatalyst, tvos, ); productRef = 8B3B63EA2F597F94005BA55B /* TextFieldAlert */; };
 		8B62D5C22F87FB3300DF6F8C /* libByeDPICLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B62D5A42F87ECAB00DF6F8C /* libByeDPICLib.a */; };
 		8B62D5C52F87FCF600DF6F8C /* libByeDPICLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B62D5A42F87ECAB00DF6F8C /* libByeDPICLib.a */; };
 		8B62D5CB2F880A0A00DF6F8C /* libByeDPIKitLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B62D5BB2F87FA9500DF6F8C /* libByeDPIKitLib.a */; };
 		8B62D5DE2F88186300DF6F8C /* libByeDPIKitLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B62D5BB2F87FA9500DF6F8C /* libByeDPIKitLib.a */; };
+		8B9A83852F8CEF4B003D3DE5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B9A83842F8CEF4B003D3DE5 /* RswiftLibrary */; };
+		8B9A83872F8CEF90003D3DE5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B9A83862F8CEF90003D3DE5 /* RswiftLibrary */; };
 		8BA5E1C92F7108D700F47B9C /* SwByeDPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD891882F3A1A750020D925 /* SwByeDPI.framework */; };
 		8BA5E1CA2F7108D700F47B9C /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA5E1C22F7108D700F47B9C /* RswiftLibrary */; };
 		8BA5E1CF2F7108D700F47B9C /* SwByeDPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD891882F3A1A750020D925 /* SwByeDPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -175,11 +175,20 @@
 		8B46A3052F69D77D00B70C6E /* Package@swift-5.3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.3.swift"; sourceTree = "<group>"; };
 		8B46A3062F69D77D00B70C6E /* Package@swift-5.9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.9.swift"; sourceTree = "<group>"; };
 		8B46A3072F69D77D00B70C6E /* Package@swift-5.10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.10.swift"; sourceTree = "<group>"; };
+		8B58D3D22F8E1046004CFDDA /* RswiftResources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RswiftResources.xcodeproj; sourceTree = "<group>"; };
+		8B58D3DD2F8E1046004CFDDA /* Tun2SocksKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Tun2SocksKit.xcodeproj; sourceTree = "<group>"; };
+		8B58D6C22F8E1611004CFDDA /* xcodebuild_jailbreak.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = xcodebuild_jailbreak.sh; sourceTree = "<group>"; };
 		8B62D5A42F87ECAB00DF6F8C /* libByeDPICLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libByeDPICLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B62D5BB2F87FA9500DF6F8C /* libByeDPIKitLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libByeDPIKitLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B707C052F7D7E9800074C5A /* update_byedpi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_byedpi.sh; sourceTree = "<group>"; };
 		8B7688822F752DDB00234751 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		8B8F7A142F4799180015A52A /* ByeDPIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ByeDPIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9A7E942F8CC751003D3DE5 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		8B9A7F6E2F8CDC31003D3DE5 /* RswiftResources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RswiftResources.xcodeproj; sourceTree = "<group>"; };
+		8B9A80222F8CDE03003D3DE5 /* Tun2SocksKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Tun2SocksKit.xcodeproj; sourceTree = "<group>"; };
+		8B9A80912F8CEDE5003D3DE5 /* RswiftResources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RswiftResources.xcodeproj; sourceTree = "<group>"; };
+		8B9A809C2F8CEDE5003D3DE5 /* Tun2SocksKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Tun2SocksKit.xcodeproj; sourceTree = "<group>"; };
+		8B9A83882F8CF43C003D3DE5 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		8BA5E1D32F7108D700F47B9C /* ByeDPImacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByeDPImacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA5E1FF2F710D3300F47B9C /* README-ru.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-ru.md"; sourceTree = "<group>"; };
 		8BA5E2002F710D4500F47B9C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -228,6 +237,7 @@
 				Sources/ByeByeDPI/Icons.xcassets,
 				Sources/ByeByeDPI/LaunchScreen.storyboard,
 				Sources/ByeByeDPI/LaunchScreenTvOS.storyboard,
+				Sources/ByeByeDPI/Makefile,
 				Sources/ByeByeDPI/Model/AppProperties.swift,
 				Sources/ByeByeDPI/Model/BitBool8.swift,
 				Sources/ByeByeDPI/Model/LNWAuthorizationStatus.swift,
@@ -305,6 +315,7 @@
 				Sources/ByeByeDPI/Icons.xcassets,
 				Sources/ByeByeDPI/LaunchScreen.storyboard,
 				Sources/ByeByeDPI/LaunchScreenTvOS.storyboard,
+				Sources/ByeByeDPI/Makefile,
 				Sources/ByeByeDPI/Model/AppProperties.swift,
 				Sources/ByeByeDPI/Model/BitBool8.swift,
 				Sources/ByeByeDPI/Model/LNWAuthorizationStatus.swift,
@@ -440,6 +451,7 @@
 				"Sources/ByeByeDPI/Extension/UIApplication+EndEdit.swift",
 				"Sources/ByeByeDPI/Extension/URL+QueryDictionary.swift",
 				Sources/ByeByeDPI/Icons.xcassets,
+				Sources/ByeByeDPI/Makefile,
 				Sources/ByeByeDPI/Model/AppProperties.swift,
 				Sources/ByeByeDPI/Model/BitBool8.swift,
 				Sources/ByeByeDPI/Model/LNWAuthorizationStatus.swift,
@@ -535,10 +547,13 @@
 				ByeDPIC/byedpi/win_service.c,
 				ByeDPIC/ciadpi_bridge.c,
 				"ByeDPIC/commit-id",
+				ByeDPIC/Makefile,
 				ByeDPIC/PrivacyInfo.xcprivacy,
 				ByeDPIKit/ByeDPI.swift,
+				ByeDPIKit/Makefile,
 				ByeDPIKit/Model/BDError.swift,
 				ByeDPIKit/PrivacyInfo.xcprivacy,
+				SwByeDPI/Makefile,
 			);
 			target = 8BD891872F3A1A750020D925 /* SwByeDPI */;
 		};
@@ -549,6 +564,7 @@
 		8B3311D52F4A468B00E30583 /* CodeGen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CodeGen; sourceTree = "<group>"; };
 		8B3311DC2F4A4E2C00E30583 /* Assets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Assets; sourceTree = "<group>"; };
 		8B3B633E2F595401005BA55B /* Experimental */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Experimental; sourceTree = "<group>"; };
+		8B9A7EA52F8CC93C003D3DE5 /* TheosFrameworks */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TheosFrameworks; sourceTree = "<group>"; };
 		8BA5E6912F713A1000F47B9C /* RepoAssets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RepoAssets; sourceTree = "<group>"; };
 		8BA6AB9A2F3A6F9500999BF6 /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8BBA5FCA2F67D5150092E52A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8BA6AC1C2F3A708F00999BF6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
 		8BD891932F3A1A860020D925 /* Sources */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8B62D5AF2F87F90000DF6F8C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8B8F7A1F2F47996A0015A52A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8B62D5C92F87FD1D00DF6F8C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8BBA656C2F6841F20092E52A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8BD891982F3A1B730020D925 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Sources; sourceTree = "<group>"; };
@@ -560,8 +576,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BBA638B2F6835F40092E52A /* SwByeDPI.framework in Frameworks */,
-				8B2BF7B92F4DFB9D0016A26B /* RswiftLibrary in Frameworks */,
 				8B3B63EB2F597F94005BA55B /* TextFieldAlert in Frameworks */,
+				8B9A83852F8CEF4B003D3DE5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,8 +586,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3AF57C2F6DCEDE0085E8BC /* SwByeDPI.framework in Frameworks */,
-				8B3AF5822F6DCEE80085E8BC /* RswiftLibrary in Frameworks */,
 				8B3AF5842F6DCEEF0085E8BC /* TextFieldAlert in Frameworks */,
+				8B9A83872F8CEF90003D3DE5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +667,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B58D3E02F8E1046004CFDDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B58D3E22F8E1046004CFDDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8B8F79F12F4795840015A52A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,9 +690,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B9A7F702F8CDC31003D3DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9A80292F8CDE19003D3DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9A809F2F8CEDE5003D3DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9A80A12F8CEDE5003D3DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8BD8917E2F3A1A750020D925 = {
 			isa = PBXGroup;
 			children = (
+				8B9A7EA52F8CC93C003D3DE5 /* TheosFrameworks */,
 				8B3B633E2F595401005BA55B /* Experimental */,
 				8B2BF7922F4DF95E0016A26B /* Example */,
 				8B3311DC2F4A4E2C00E30583 /* Assets */,
@@ -672,6 +731,9 @@
 				8BA6AB9A2F3A6F9500999BF6 /* Tests */,
 				8BC2216F2F7CF6AB0010F815 /* .gitignore */,
 				8B707C052F7D7E9800074C5A /* update_byedpi.sh */,
+				8B9A7E942F8CC751003D3DE5 /* control */,
+				8B9A83882F8CF43C003D3DE5 /* Makefile */,
+				8B58D6C22F8E1611004CFDDA /* xcodebuild_jailbreak.sh */,
 				8B30B4962F5F37BC00228363 /* Package.swift */,
 				8B46A3072F69D77D00B70C6E /* Package@swift-5.10.swift */,
 				8B46A3062F69D77D00B70C6E /* Package@swift-5.9.swift */,
@@ -740,14 +802,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B52DB1F2F62A683009BE7C3 /* PBXTargetDependency */,
+				8B58D6C82F8E18B0004CFDDA /* PBXTargetDependency */,
 				8BBA638E2F6835F40092E52A /* PBXTargetDependency */,
 				8B09F86B2F7A672E0065FB4D /* PBXTargetDependency */,
 			);
 			name = ByeByeDPI;
 			packageProductDependencies = (
-				8B2BF7B82F4DFB9D0016A26B /* RswiftLibrary */,
 				8B3B63EA2F597F94005BA55B /* TextFieldAlert */,
+				8B9A83842F8CEF4B003D3DE5 /* RswiftLibrary */,
 			);
 			productName = "ByeDPI-iOS";
 			productReference = 8B2BF7972F4DF9B20016A26B /* ByeByeDPI.app */;
@@ -765,13 +827,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				8B58D6C42F8E18A2004CFDDA /* PBXTargetDependency */,
 				8B3AF5722F6DCDF50085E8BC /* PBXTargetDependency */,
-				8B3AF56E2F6DCDEB0085E8BC /* PBXTargetDependency */,
 			);
 			name = ByeDPI;
 			packageProductDependencies = (
-				8B3AF5812F6DCEE80085E8BC /* RswiftLibrary */,
 				8B3AF5832F6DCEEF0085E8BC /* TextFieldAlert */,
+				8B9A83862F8CEF90003D3DE5 /* RswiftLibrary */,
 			);
 			productName = ByeByeDPIProxy;
 			productReference = 8B3AF55E2F6DCCCF0085E8BC /* ByeDPI.app */;
@@ -849,8 +911,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				8B58D6C62F8E18A7004CFDDA /* PBXTargetDependency */,
 				8BA5E1BF2F7108D700F47B9C /* PBXTargetDependency */,
-				8BA5E1C12F7108D700F47B9C /* PBXTargetDependency */,
 			);
 			name = ByeDPImacOS;
 			packageProductDependencies = (
@@ -1017,13 +1079,39 @@
 			mainGroup = 8BD8917E2F3A1A750020D925;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */,
 				8B3B63E92F597F94005BA55B /* XCRemoteSwiftPackageReference "TextFieldAlert" */,
 				8BB420722F73FFB1005C2F2B /* XCRemoteSwiftPackageReference "Tun2SocksKit" */,
+				8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			preferredProjectObjectVersion = 56;
 			productRefGroup = 8BD891892F3A1A750020D925 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B58D3E22F8E1046004CFDDA /* Products */;
+					ProjectRef = 8B58D3D22F8E1046004CFDDA /* RswiftResources.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B9A7F702F8CDC31003D3DE5 /* Products */;
+					ProjectRef = 8B9A7F6E2F8CDC31003D3DE5 /* RswiftResources.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B9A809F2F8CEDE5003D3DE5 /* Products */;
+					ProjectRef = 8B9A80912F8CEDE5003D3DE5 /* RswiftResources.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B58D3E02F8E1046004CFDDA /* Products */;
+					ProjectRef = 8B58D3DD2F8E1046004CFDDA /* Tun2SocksKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B9A80A12F8CEDE5003D3DE5 /* Products */;
+					ProjectRef = 8B9A809C2F8CEDE5003D3DE5 /* Tun2SocksKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B9A80292F8CDE19003D3DE5 /* Products */;
+					ProjectRef = 8B9A80222F8CDE03003D3DE5 /* Tun2SocksKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B2BF7962F4DF9B20016A26B /* ByeByeDPI */,
@@ -1193,18 +1281,22 @@
 			target = 8BB4205B2F73FEE6005C2F2B /* ByeByeDPITun */;
 			targetProxy = 8B09F86A2F7A672E0065FB4D /* PBXContainerItemProxy */;
 		};
-		8B3AF56E2F6DCDEB0085E8BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 8B3AF56D2F6DCDEB0085E8BC /* RswiftGenerateInternalResources */;
-		};
 		8B3AF5722F6DCDF50085E8BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8BD891872F3A1A750020D925 /* SwByeDPI */;
 			targetProxy = 8B3AF5712F6DCDF50085E8BC /* PBXContainerItemProxy */;
 		};
-		8B52DB1F2F62A683009BE7C3 /* PBXTargetDependency */ = {
+		8B58D6C42F8E18A2004CFDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 8B52DB1E2F62A683009BE7C3 /* RswiftGenerateInternalResources */;
+			productRef = 8B58D6C32F8E18A2004CFDDA /* RswiftGenerateInternalResources */;
+		};
+		8B58D6C62F8E18A7004CFDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8B58D6C52F8E18A7004CFDDA /* RswiftGenerateInternalResources */;
+		};
+		8B58D6C82F8E18B0004CFDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8B58D6C72F8E18B0004CFDDA /* RswiftGenerateInternalResources */;
 		};
 		8B62D5C42F87FB3300DF6F8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1230,10 +1322,6 @@
 			isa = PBXTargetDependency;
 			target = 8BD891872F3A1A750020D925 /* SwByeDPI */;
 			targetProxy = 8BA5E1C02F7108D700F47B9C /* PBXContainerItemProxy */;
-		};
-		8BA5E1C12F7108D700F47B9C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 8B3AF56D2F6DCDEB0085E8BC /* RswiftGenerateInternalResources */;
 		};
 		8BA6AC152F3A706D00999BF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2113,6 +2201,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug/arm64",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug/arm64e",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug",
+				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 0.17.3;
@@ -2165,6 +2259,12 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug/arm64",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug/arm64e",
+					"$(PROJECT_DIR)/Sources/ByeDPIC/.theos/obj/debug",
 				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -2429,20 +2529,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.8.0;
-			};
-		};
 		8B3B63E92F597F94005BA55B /* XCRemoteSwiftPackageReference "TextFieldAlert" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sochalewski/TextFieldAlert";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.4.0;
+			};
+		};
+		8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
 			};
 		};
 		8BA5E1C32F7108D700F47B9C /* XCRemoteSwiftPackageReference "R" */ = {
@@ -2464,21 +2564,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8B2BF7B82F4DFB9D0016A26B /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
-		8B3AF56D2F6DCDEB0085E8BC /* RswiftGenerateInternalResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */;
-			productName = "plugin:RswiftGenerateInternalResources";
-		};
-		8B3AF5812F6DCEE80085E8BC /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
 		8B3AF5832F6DCEEF0085E8BC /* TextFieldAlert */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8B3B63E92F597F94005BA55B /* XCRemoteSwiftPackageReference "TextFieldAlert" */;
@@ -2489,10 +2574,30 @@
 			package = 8B3B63E92F597F94005BA55B /* XCRemoteSwiftPackageReference "TextFieldAlert" */;
 			productName = TextFieldAlert;
 		};
-		8B52DB1E2F62A683009BE7C3 /* RswiftGenerateInternalResources */ = {
+		8B58D6C32F8E18A2004CFDDA /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8B2BF7B72F4DFB9D0016A26B /* XCRemoteSwiftPackageReference "R" */;
+			package = 8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		8B58D6C52F8E18A7004CFDDA /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		8B58D6C72F8E18B0004CFDDA /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		8B9A83842F8CEF4B003D3DE5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		8B9A83862F8CEF90003D3DE5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9A83832F8CEF4B003D3DE5 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
 		};
 		8BA5E1C22F7108D700F47B9C /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;

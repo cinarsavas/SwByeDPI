@@ -1,0 +1,4 @@
+module Tun2SocksKitC {
+    header "Tun2SocksKitC.h"
+    export *
+}
