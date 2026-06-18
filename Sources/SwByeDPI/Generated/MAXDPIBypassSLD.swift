@@ -11,5 +11,6 @@ public final class MAXDPIBypassSLD {
       "sferum.ru",
       "juicedev.ru",
       "gosuslugi.ru",
+      "mail.ru",
   ]))
   fileprivate init() {} }
