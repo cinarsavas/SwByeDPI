@@ -190,6 +190,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B23DCAB2FE3D491009243D0 /* assets_codegen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = assets_codegen.sh; sourceTree = "<group>"; };
+		8B23DDD42FE3D5CD009243D0 /* xcodebuild_unsigned.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = xcodebuild_unsigned.sh; sourceTree = "<group>"; };
 		8B2BF7972F4DF9B20016A26B /* ByeByeDPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByeByeDPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B30B4962F5F37BC00228363 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8B30B4A02F5F664E00228363 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
@@ -650,7 +652,6 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B2BF7922F4DF95E0016A26B /* Example */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8B2BF7AF2F4DF9C90016A26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8BB420712F73FEF7005C2F2B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8B3AF5752F6DCEA60085E8BC /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8B5F84A02F9F5564001D2867 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 8BA5E1D82F710B0500F47B9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Example; sourceTree = "<group>"; };
-		8B3311D52F4A468B00E30583 /* CodeGen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CodeGen; sourceTree = "<group>"; };
 		8B3311DC2F4A4E2C00E30583 /* Assets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Assets; sourceTree = "<group>"; };
 		8B3B633E2F595401005BA55B /* Experimental */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Experimental; sourceTree = "<group>"; };
 		8BA5E6912F713A1000F47B9C /* RepoAssets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RepoAssets; sourceTree = "<group>"; };
@@ -781,10 +782,10 @@
 				8B2BF7922F4DF95E0016A26B /* Example */,
 				8B3311DC2F4A4E2C00E30583 /* Assets */,
 				8BA5E6912F713A1000F47B9C /* RepoAssets */,
-				8B3311D52F4A468B00E30583 /* CodeGen */,
 				8BD891932F3A1A860020D925 /* Sources */,
 				8BA6AB9A2F3A6F9500999BF6 /* Tests */,
 				8BC2216F2F7CF6AB0010F815 /* .gitignore */,
+				8B23DCAB2FE3D491009243D0 /* assets_codegen.sh */,
 				8B707C052F7D7E9800074C5A /* update_byedpi.sh */,
 				8B30B4962F5F37BC00228363 /* Package.swift */,
 				8B46A3072F69D77D00B70C6E /* Package@swift-5.10.swift */,
@@ -795,6 +796,7 @@
 				8BD891EB2F3A1C720020D925 /* SwByeDPI.podspec */,
 				8BE6A9E12F55DAB50041DB34 /* LICENSE */,
 				8BA5E2002F710D4500F47B9C /* CHANGELOG.md */,
+				8B23DDD42FE3D5CD009243D0 /* xcodebuild_unsigned.sh */,
 				8BE6A9E42F55DB690041DB34 /* README.md */,
 				8BA5E1FF2F710D3300F47B9C /* README-ru.md */,
 				8B30B4A02F5F664E00228363 /* TODO.md */,
@@ -1427,6 +1429,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = Example/Sources/ByeByeDPI/PreviewContent/PreviewAssets.xcassets;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = 84LBSSY4T8;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 84LBSSY4T8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -1455,6 +1458,7 @@
 				PRODUCT_MODULE_NAME = ByeByeDPI;
 				PRODUCT_NAME = ByeByeDPI;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "test profile";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "test profile";
 				REGISTER_APP_GROUPS = NO;
 				SDKROOT = iphoneos;

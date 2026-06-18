@@ -51,7 +51,7 @@ SwByeDPI is available through SPM
 There are 3 modules-libraries:
 
 1. [ByeDPIC](./Sources/ByeDPIC) - Low-level compiled C-module. It doesn't contain any ObjC/Swift sources, so it can be used on the oldest Apple devices. Not recomended for use
-2. [ByeDPIKit](./Sources/ByeDPIKit) - ByeDPIC minimal wrapper. It allows to start/stop native byedpi SOCKS proxy with DPI-evasion parameters. This module doesn't containt any Apple platform-specific checks for byedpi command-line arguments
+2. [ByeDPIKit](./Sources/ByeDPIKit) - ByeDPIC minimal wrapper. It allows to start/stop native byedpi SOCKS proxy with DPI-evasion parameters. This module doesn't contain any Apple platform-specific checks for byedpi command-line arguments
 3. [SwByeDPI](./Sources/SwByeDPI) - ByeDPIC extended wrapper, which is based on ByeDPIKit. It contains byedpi launch config abstractions, proxified (SOCKS) URLSession's init tools, [bundled strategies' and domains' sets for testing and further use](./Assets). Also it contains strategy testing and analyzing features
 
 **SwByeDPI SPM setup**
@@ -153,7 +153,7 @@ let sldList = domainList.retrieveSLDList()
 
 SwByeDPI module includes lists of sites for testing and ByeDPI bypass, as well as strategies in the form of text files. These files are then used to generate *.swift files, which are then compiled into the resulting module (Built-in domains and strategies). You can edit or delete existing lists, or add new ones.
 
-Generation is performed manually using the [code generator script](./CodeGen/generate.sh), which defines all files with the *.strategies and *.domains extensions in [Assets](./Assets). **Note**: The list file format is the same for both strategies and domains—one list per line.
+Generation is performed manually using the [code generator script](./assets_codegen.sh), which defines all files with the *.strategies and *.domains extensions in [Assets](./Assets). **Note**: The list file format is the same for both strategies and domains—one list per line.
 
 ## Example app
 
@@ -180,7 +180,7 @@ For advanced use, you can refer to the [comprehensive instructions from the ByeB
 
 ### Build
 
-There are two possible app build options:
+There are 3 possible app build options:
 
 - **VPN client (ByeByeDPI)** ByeDPI -> Tun2SocksKit -> NEVPN + DNS - **requires a paid developer license**: an individual account is sufficient for development, debugging, and uploading to TestFlight; a legal entity or sole proprietorship account is required for release in the App Store [according to Apple Developer Guidelines 5.4](https://developer.apple.com/app-store/review/guidelines/#legal). **Note**: The app is not a general VPN client, as ByeDPI runs locally on the device. The VPN trick is needed to enable ByeDPI functionality in the background (when the app is minimized or not running) and to process ByeDPI internet traffic from all apps on the phone and devices on the local network (you must grant the app permission to access the local network). Support for DoH/DoT in the app allows you to bypass geoblocks imposed by the services themselves.
 - **ByeDPI SOCKS proxy server (ByeDPI)** - for running on your own devices, **does not require a paid developer license**. This build is ideal for debugging and testing app functionality on endpoints: you can test strategies and create an optimal composite using an analyzer. The caveat here is that ByeDPI will only work while the app is open (foreground).
@@ -203,6 +203,12 @@ In Apple Developer, for your app (VPN client), you need to do the following (ass
 - Import the profiles into Xcode
 
 3. Run the application build (ByeByeDPI or ByeDPI) via the XCode GUI or Terminal
+
+**Unsigned build create (AltStore/SideStore/TrollStore/LiveContainer etc.)**
+
+Two schemes (ByeDPIBg, ByeByeDPI) are built using *xcodebuild* and packaged into an IPA using [xcodebuild_unsigned.sh](./xcodebuild_unsigned.sh)
+
+Artifacts from the script's output are located in [Releases](https://github.com/mIwr/SwByeDPI/releases/latest)
 
 ### Problems and soltions
 

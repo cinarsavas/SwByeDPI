@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# SwByeDPI strategies and domain sets code generator
+
 generate_swift_domains() {
     if [ -z "$1" ]; then
         echo "❌ Empty source file"
@@ -146,11 +148,11 @@ process_asset_folder() {
 }
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]:-$0}"; )" &> /dev/null && pwd 2> /dev/null; )
-GENERATED_DIR="$SCRIPT_DIR/../Sources/SwByeDPI/Generated"
+GENERATED_DIR="$SCRIPT_DIR/Sources/SwByeDPI/Generated"
 if [ ! -d "$GENERATED_DIR" ]; then
   mkdir "$GENERATED_DIR"
 fi
 
-process_asset_folder "$SCRIPT_DIR/../Assets" "$GENERATED_DIR"
-process_asset_folder "$SCRIPT_DIR/../Assets/DPIBypassSLD" "$GENERATED_DIR"
-process_asset_folder "$SCRIPT_DIR/../Assets/TestDomains" "$GENERATED_DIR"
+process_asset_folder "$SCRIPT_DIR/Assets" "$GENERATED_DIR"
+process_asset_folder "$SCRIPT_DIR/Assets/DPIBypassSLD" "$GENERATED_DIR"
+process_asset_folder "$SCRIPT_DIR/Assets/TestDomains" "$GENERATED_DIR"
