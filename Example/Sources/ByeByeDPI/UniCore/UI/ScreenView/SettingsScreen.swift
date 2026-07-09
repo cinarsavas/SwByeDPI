@@ -59,7 +59,7 @@ struct SettingsScreen: View {
                         }
                         return true
                     }, onNewValue: { newVal in
-                        if (resolvedDnsServers == newVal) {
+                        if (properties.resolvedDnsServers.joined(separator: " ") == newVal) {
                             return
                         }
                         var servers: [String] = []

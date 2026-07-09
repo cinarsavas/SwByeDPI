@@ -210,7 +210,7 @@ Two schemes (ByeDPIBg, ByeByeDPI) are built using *xcodebuild* and packaged into
 
 Artifacts from the script's output are located in [Releases](https://github.com/mIwr/SwByeDPI/releases/latest)
 
-### Problems and soltions
+### Problems and solutions
 
 - The VPN tunnel has started, but websites don't open, and the logs (Console.app) show a cyclical 'udp session start - connect - destruct' message. This is related to the ByeDPI address 127.0.0.1/localhost. In Network Extension, the OS drops all packets to this address. You must specify a different local address. **Note**: When connected to Wi-Fi, the local IP address from your ISP will be automatically substituted if 127.0.0.1, ::1, 0.0.0.0, or :: is specified.
 - Before iOS 14, the app will be extremely unstable due to the [hard limits for Network Extension](http://www.openradar.appspot.com/27660401) - 15 MB. After exceeding this limit, the OS will kill the VPN tunnel without warning or crash. The solution is to use the app on iOS 15+ smartphones, where the limit is already 50 MB. **Note**: During testing, it was found that with the [correct Tun2SOCKS config](https://github.com/heiher/hev-socks5-tunnel?tab=readme-ov-file#low-memory-usage) RAM consumption does not even exceed **15 MB (On average, it remained at 4.3-4.8 MB)**, so, theoretically, this NetworkExtension can be ported to UIKit rails to provide support even for iOS 10.0+ with a 15 MB limitation per Network Extension

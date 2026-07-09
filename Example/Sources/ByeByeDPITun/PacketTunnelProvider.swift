@@ -213,9 +213,10 @@ misc:
             NEIPv4Route.default()
         ]
         ipv4Settings.excludedRoutes = [
-            NEIPv4Route(destinationAddress: socksListenIp, subnetMask: "255.255.255.255"),
             NEIPv4Route(destinationAddress: "192.168.0.0", subnetMask: "255.255.0.0"),
             NEIPv4Route(destinationAddress: "172.16.0.0", subnetMask: "255.240.0.0"),
+            NEIPv4Route(destinationAddress: "10.0.0.0",    subnetMask: "255.0.0.0"),
+            NEIPv4Route(destinationAddress: "100.64.0.0",  subnetMask: "255.192.0.0"),
             
             // Google DNS
             NEIPv4Route(destinationAddress: "8.8.8.8", subnetMask: "255.255.255.255"),
@@ -233,6 +234,9 @@ misc:
             NEIPv4Route(destinationAddress: "94.140.14.14", subnetMask: "255.255.255.255"),
             NEIPv4Route(destinationAddress: "94.140.14.15", subnetMask: "255.255.255.255"),
         ]
+        if (socksListenIp != "0.0.0.0") {
+            ipv4Settings.excludedRoutes?.append(NEIPv4Route(destinationAddress: socksListenIp, subnetMask: "255.255.255.255"))
+        }
         tunnelSettings.ipv4Settings = ipv4Settings
     
         let tun2SocksConfig = Socks5Tunnel.Config.string(content: tun2SocksConfigYAML)

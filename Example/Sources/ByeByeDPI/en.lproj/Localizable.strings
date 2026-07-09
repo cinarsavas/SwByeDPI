@@ -18,7 +18,7 @@
 "settingsGeneralImportSettingsSuccess" = "Settings has been imported!";
 "settingsGeneralImportSettingsFail" = "Import settings fail";
 "settingsGeneralExportSettingsOption" = "Export settings";
-"settingsGeneralExportSettingsOptionDesc" = "Export settings to file (Android  BBD format)";
+"settingsGeneralExportSettingsOptionDesc" = "Export settings to file (Android BBD format)";
 
 "settingsByeDPISection" = "ByeDPI";
 "settingsByeDPIArgsOption" = "ByeDPI CMD args";
