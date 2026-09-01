@@ -1,0 +1,23 @@
+name: Build ByeDPIBg
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.app
+      - name: Build
+        run: |
+          xcodebuild -scheme ByeDPIBg -sdk iphoneos -configuration Release \
+            IPHONEOS_DEPLOYMENT_TARGET=12.0 CODE_SIGNING_ALLOWED=NO \
+            archive -archivePath build/ByeDPIBg.xcarchive
+      - name: Zip app
+        run: |
+          mkdir Payload
+          cp -R build/ByeDPIBg.xcarchive/Products/Applications/ByeDPI.app Payload/
+          zip -r ByeDPIBg-fixed.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ByeDPIBg-fixed
+          path: ByeDPIBg-fixed.ipa
