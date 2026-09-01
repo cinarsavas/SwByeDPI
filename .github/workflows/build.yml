@@ -10,8 +10,7 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode_16.2.app
       - name: Build
-gh run view 33466167112 --repo cinarsavas/SwByeDPI --log-failed        run: |
-          xcodebuild -skipPackagePluginValidation -skipMacroValidation -scheme ByeDPIBg -sdk iphoneos -configuration Release IPHONEOS_DEPLOYMENT_TARGET=12.0 CODE_SIGNING_ALLOWED=NO archive -archivePath build/ByeDPIBg.xcarchive
+        run: xcodebuild -skipPackagePluginValidation -skipMacroValidation -scheme ByeDPIBg -sdk iphoneos -configuration Release IPHONEOS_DEPLOYMENT_TARGET=12.0 CODE_SIGNING_ALLOWED=NO archive -archivePath build/ByeDPIBg.xcarchive
       - name: Zip app
         run: |
           mkdir Payload
