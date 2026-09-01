@@ -6,7 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Select Xcode
-        run: 
+        run: ls /Applications | grep Xcode
+          sudo xcode-select -s /Applications/Xcode_16.2.app || \
+          sudo xcode-select -s /Applications/Xcode_16.1.app || \
+          sudo xcode-select -s /Applications/Xcode_16.0.app || \
+          sudo xcode-select -s /Applications/Xcode_16.app
       - name: Build
         run: |
           xcodebuild -scheme ByeDPIBg -sdk iphoneos -configuration Release \
